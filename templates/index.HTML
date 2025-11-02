@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crossfit Personalizado</title>
+</head>
+<body bgcolor="#f5f5f5" text="#333">
+    <center>
+        <h1>💪 Bienvenido a Crossfit Personalizado 💪</h1>
+        <p>Ingresa tus datos y recibe tu rutina diaria adaptada a ti</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/CrossFit_CFE.jpg" width="500" alt="Crossfit">
+    </center>
+
+    <hr>
+
+    <h2>Formulario de Encuesta</h2>
+    <form method="POST">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Edad:</label><br>
+        <input type="number" name="edad" required><br><br>
+
+        <label>Peso (kg):</label><br>
+        <input type="number" name="peso" required><br><br>
+
+        <label>Altura (cm):</label><br>
+        <input type="number" name="altura" required><br><br>
+
+        <label>Problemas de salud o lesiones:</label><br>
+        <textarea name="salud" placeholder="Describe si tienes alguna restricción"></textarea><br><br>
+
+        <input type="submit" value="Generar rutina">
+    </form>
+
+    <hr>
+
+    <div>
+        {{ rutina|safe }}
+    </div>
+
+    <hr>
+    <h3>Sobre Crossfit</h3>
+    <p>El Crossfit es un entrenamiento funcional de alta intensidad que combina fuerza, cardio y movilidad. ¡Ideal para mantener cuerpo y mente activos!</p>
+
+    <h3>Galería</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/CrossFit_pullups.jpg" width="300" alt="Pull-ups">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/CrossFit_WOD.jpg" width="300" alt="Ejercicios de Crossfit">
+</body>
+</html>
